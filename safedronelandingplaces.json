@@ -1,0 +1,59 @@
+{
+    
+    "LandingPlatforms": [
+    {
+        "Title":"Safe Drone Landing Platform",
+        "creationDate":"26112016"
+    }
+    ],
+    
+    
+    "Platforms": [
+
+ {
+     "Category": "A",
+     "Name": "Testing platform 1",
+     "uniqueID":"SDLF00001",
+     "latitude":"60.7398692963689",
+     "longitude": "24.7391692921689",
+     "Comment":"Testing....",
+     "Availability": "true",
+     "Temperature": "3",
+     "Contact":"test@test.com"
+ },
+ {
+     "Category": "A",
+     "Name": "Testing platform 2",
+     "uniqueID":"SDLF00002",
+     "latitude":"60.189880",
+     "longitude": "24.943435",
+     "Comment":"Testing....",
+     "Availability": "false",
+     "Temperature": "3",
+     "Contact":"test@test.com"
+ },
+ {
+     "Category": "B",
+     "Name": "Testing platform 3",
+     "uniqueID":"SDLF00003",
+     "latitude":"60.181638",
+     "longitude": "24.937266",
+     "Comment":"Testing....",
+     "Availability": "false",
+     "Temperature": "6",
+     "Contact":"test@test.com"
+ },
+ {
+     "Category": "C",
+     "Name": "Testing platform 4",
+     "uniqueID":"SDLF00004",
+     "latitude":"60.177179",
+     "longitude": "24.936759",
+     "Comment":"Testing....",
+     "Availability": "true",
+     "Temperature": "10",
+     "Contact":"test@test.com"
+ }
+ 
+]
+}

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ImM-Li-dKi">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5x3-Fn-2Om">
+            <objects>
+                <viewController id="ImM-Li-dKi" customClass="ViewController" customModule="LandingPlatformManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="b59-Vf-D6S"/>
+                        <viewControllerLayoutGuide type="bottom" id="W5d-LN-Q4J"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="U0E-OE-OZK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="rP2-50-r7Y">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="458"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="1Br-Er-I24"/>
+                                </constraints>
+                            </mapView>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FHm-7t-BQo" userLabel="btnHolder">
+                                <rect key="frame" x="132" y="477" width="110" height="110"/>
+                                <subviews>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="TuI-tR-zeE" customClass="FtkToolBtn" customModule="LandingPlatformManager" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="20" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="KAd-h0-dmC"/>
+                                            <constraint firstAttribute="height" constant="70" id="OxG-tc-BOk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="10"/>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-80"/>
+                                        <state key="normal" title="Register">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                <color key="value" red="0.72516025640000004" green="0.41386112860000002" blue="0.3697144061" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="strokeColor">
+                                                <color key="value" red="0.97324329610000004" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="strokelineWidth">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="iconScale">
+                                                <real key="value" value="0.20000000000000001"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="regBtn:" destination="ImM-Li-dKi" eventType="touchUpInside" id="KvT-Ae-cQO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="TuI-tR-zeE" firstAttribute="centerY" secondItem="FHm-7t-BQo" secondAttribute="centerY" id="hAd-HE-EaN"/>
+                                    <constraint firstItem="TuI-tR-zeE" firstAttribute="centerX" secondItem="FHm-7t-BQo" secondAttribute="centerX" id="t2r-Wv-wCj"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Landing platform name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sGp-dl-1Yz">
+                                <rect key="frame" x="96" y="594" width="182" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="qze-Lk-aF3"/>
+                                    <constraint firstAttribute="width" constant="182" id="xAZ-Am-n84"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8L6-9u-o8l">
+                                <rect key="frame" x="96" y="623" width="182" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="ATs-g0-iae"/>
+                                    <constraint firstAttribute="height" constant="30" id="FWm-Lb-Oaa"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="W5d-LN-Q4J" firstAttribute="top" secondItem="8L6-9u-o8l" secondAttribute="bottom" constant="14" id="8rA-wN-OuM"/>
+                            <constraint firstItem="rP2-50-r7Y" firstAttribute="leading" secondItem="U0E-OE-OZK" secondAttribute="leading" id="96b-3w-JYb"/>
+                            <constraint firstItem="sGp-dl-1Yz" firstAttribute="leading" secondItem="8L6-9u-o8l" secondAttribute="leading" id="E0Y-Nd-hRf"/>
+                            <constraint firstItem="8L6-9u-o8l" firstAttribute="top" secondItem="sGp-dl-1Yz" secondAttribute="bottom" constant="20" id="Glz-7a-JQ6"/>
+                            <constraint firstAttribute="trailing" secondItem="rP2-50-r7Y" secondAttribute="trailing" id="N5z-P1-NWz"/>
+                            <constraint firstItem="W5d-LN-Q4J" firstAttribute="top" secondItem="rP2-50-r7Y" secondAttribute="bottom" constant="250" id="Qao-zz-Z6I"/>
+                            <constraint firstItem="FHm-7t-BQo" firstAttribute="centerX" secondItem="U0E-OE-OZK" secondAttribute="centerX" id="Yn8-U1-P3Z"/>
+                            <constraint firstItem="sGp-dl-1Yz" firstAttribute="top" secondItem="FHm-7t-BQo" secondAttribute="bottom" constant="15" id="jMV-FP-fZX"/>
+                            <constraint firstItem="FHm-7t-BQo" firstAttribute="top" secondItem="rP2-50-r7Y" secondAttribute="bottom" constant="19" id="qTb-4o-V73"/>
+                            <constraint firstItem="8L6-9u-o8l" firstAttribute="centerX" secondItem="U0E-OE-OZK" secondAttribute="centerX" id="u5Z-wA-lDM"/>
+                            <constraint firstItem="rP2-50-r7Y" firstAttribute="top" secondItem="U0E-OE-OZK" secondAttribute="top" id="vCq-ck-Yg6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="landingplatformName" destination="8L6-9u-o8l" id="Rtf-Fd-Yeu"/>
+                        <outlet property="mapview" destination="rP2-50-r7Y" id="28l-JG-iHU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kSC-ve-ojH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-234.40000000000001" y="-262.21889055472263"/>
+        </scene>
+    </scenes>
+</document>
